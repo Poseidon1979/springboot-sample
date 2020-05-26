@@ -1,3 +1,5 @@
+#@ load("@lib:GIT")
+
 apiVersion: build.pivotal.io/v1alpha1
 kind: Image
 metadata:
@@ -12,4 +14,5 @@ spec:
   source:
     git:
       url: https://github.com/Poseidon1979/springboot-sample.git
-      revision: 6c5170468c0b0bd7f6964c7e33724be0e4b716fd
+      revision: #@ PREVIOUS.COMMIT
+#      revision: 6c5170468c0b0bd7f6964c7e33724be0e4b716fd
