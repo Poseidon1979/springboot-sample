@@ -15,4 +15,4 @@ spec:
     git:
       url: https://github.com/Poseidon1979/springboot-sample.git
       revision: #@ PREVIOUS.COMMIT
-#      revision: 6c5170468c0b0bd7f6964c7e33724be0e4b716fd
+#!      revision: 6c5170468c0b0bd7f6964c7e33724be0e4b716fd
