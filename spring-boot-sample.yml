@@ -1,11 +1,9 @@
-#@ load("@lib:GIT")
-
 apiVersion: build.pivotal.io/v1alpha1
 kind: Image
 metadata:
   name: springboot-sample
 spec:
-  tag: harbor.haas-468.pez.pivotal.io/spring_tkg_sample/springbootsample
+  tag: ccr.ccs.tencentyun.com/yanghaitao/springboot-sample
   serviceAccount: kpack
   cacheSize: "1.5Gi"
   builder:
@@ -14,5 +12,4 @@ spec:
   source:
     git:
       url: https://github.com/Poseidon1979/springboot-sample.git
-      revision: #@ COMMIT
-#!      revision: 6c5170468c0b0bd7f6964c7e33724be0e4b716fd
+      revision: master
